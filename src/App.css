@@ -421,4 +421,12 @@ table th {
     text-align: center;
     justify-content: center;
   }
+
+   .grid-container {
+    background-color: #2196F3;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid: gap 2rem;
+  } 
+  
 }

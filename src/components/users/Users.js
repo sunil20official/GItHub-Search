@@ -14,7 +14,7 @@ import GithubContext from "../../context/github/githubContext";
         return <Spinner/>
      } else {
         return (
-            <div style={userStyle}>
+            <div className="grid-3" >
                 { users.map(user => (
                   <UserItem key={user.id} user={user} />
                ))}
@@ -22,12 +22,6 @@ import GithubContext from "../../context/github/githubContext";
         );
      }
         
-  }
-
-  const userStyle = {
-      display:'grid',
-      gridTemplateColumns:'repeat(3, 1fr)',
-      gridGap:'2rem'
   }
  
 export default Users
